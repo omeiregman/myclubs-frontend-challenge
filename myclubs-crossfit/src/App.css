@@ -1,0 +1,52 @@
+html{
+	background-color: #fff;
+	color: #555;
+	font-family: 'pilcrow', 'Arial', 'Sans-serif';
+	font-weight: 300;
+	font-size: 20px;
+	text-rendering: optimizeLegibility;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 80px;
+  position: absolute;
+  top: 1%;
+  left: 5%;
+  max-width: 130px;
+}
+
+.App-header {
+  background: url('bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-color: #222;
+  height: 800px;
+  padding: 20px;
+  color: white;
+  border-style: 10px solid;
+}
+
+.hero-text-box{
+	position: absolute;
+  font-size: 8em;
+  color: #eb3b34;
+	top: 30%;
+	left: 10%;
+
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  position: absolute;
+  font-size: large;
+  top: 40%;
+  left: 10%;
+  font-size: 1em;
+}
