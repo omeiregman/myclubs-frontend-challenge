@@ -30,13 +30,16 @@ html{
   border-style: 10px solid;
 }
 
+.hero-box{
+	margin-top: 400px;
+}
+
 .hero-text-box{
 	position: absolute;
   font-size: 8em;
   color: #eb3b34;
 	top: 30%;
 	left: 10%;
-
 }
 
 .App-title {
