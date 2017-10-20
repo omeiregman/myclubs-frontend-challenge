@@ -33,11 +33,20 @@ html{
   color: white;
 }
 
-div.side-pane{
-	color: white;
-	position: relative;
-	top: 10%;
-	left: 70%;
+.side-pane{
+		background-color:rgba(72,72,72,0.4);
+		padding-left:35px;
+		padding-right:35px;
+		padding-top:35px;
+		padding-bottom:50px;
+		width: 450px;
+		float: left;
+		left: 75%;
+		position: absolute;
+	  margin-top:30px;
+		margin-left: -260px;
+	  -moz-border-radius: 7px;
+	  -webkit-border-radius: 7px;
 }
 
 .hero-box{

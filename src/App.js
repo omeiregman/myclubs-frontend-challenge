@@ -29,7 +29,10 @@ componentDidMount(){
 
   render() {
   let data = this.state.data;
+
     return (
+      <div>
+
       <div className="sitecontainer">
         <div className="App-header">
           <img src={logo} className="App-logo" alt="myClubs" />
@@ -44,22 +47,23 @@ componentDidMount(){
             </ul>
           <div className="category-header-poition category__header__content">
             <div className="category__header__title category__header__title--initialized">
-            <h1>Crossfit</h1>
+              <h1>Crossfit</h1>
             </div>
             <p>
               High intensity fitness programme incorporating <br></br>elements from several sports and types of excercise
             </p>
           </div>
         </div>
+    {(data!=null) &&(
+      <div className="side-pane">
+        <div>
+          <p>Location: <span>{data.street}, {data.region}, <br></br> {data.city}, {data.country} </span></p>
+          <p>Reservation Email: {data.reservationEmail}</p>
 
-      {data && (
-        <div className="side-pane">
-          <div>
-            <h4>Address: {data.address}</h4>
-          </div>
         </div>
-      )}
-      </div>
+      </div>)}
+    </div>
+    </div>
     )
   }
 }
