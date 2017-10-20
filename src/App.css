@@ -14,20 +14,30 @@ html{
 .App-logo {
   height: 80px;
   position: absolute;
-  top: 1%;
+  top: 2%;
   left: 5%;
   max-width: 130px;
 }
 
+.category-header-position{
+	position: absolute;
+	left: 10%;
+}
 .App-header {
   background: url('bg.jpg');
   background-size: cover;
   background-position: center;
   background-color: #222;
-  height: 800px;
+  height: 100vh;
   padding: 20px;
   color: white;
-  border-style: 10px solid;
+}
+
+div.side-pane{
+	color: white;
+	position: relative;
+	top: 10%;
+	left: 70%;
 }
 
 .hero-box{
