@@ -7,7 +7,7 @@ import axios from 'axios';
 class App extends Component {
   constructor(props){
     super(props);
-    state = {
+    this.state = {
       data:null
     }
   }
