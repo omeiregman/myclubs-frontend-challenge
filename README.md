@@ -1,3 +1,9 @@
+CLone or download the repository
+Run
+```
+npm install
+npm start
+```
 # myClubs Frontend Challenge
 
 ## About
@@ -9,7 +15,7 @@ This is a small challenge to assess your frontend dev skills. You should invest 
 Fork this repository and submit you result as pull request. One should be able to run it by cloning your repository and running:
 
 ```
-npm install 
+npm install
 npm start
 ```
 
@@ -18,7 +24,7 @@ npm start
 Create a simple screen that displays one of our sports activities with a call to action asking the user to book it. Your app should fetch the data from this endpoint:
 
 ```
-https://frontend-challenge-190ff.firebaseio.com/activities/coding-activity.json 
+https://frontend-challenge-190ff.firebaseio.com/activities/coding-activity.json
 ```
 
 Upon clicking on the button you should show the user a confirmation that his booking was successful.
@@ -29,9 +35,3 @@ Upon clicking on the button you should show the user a confirmation that his boo
 * make it responsive
 * make it look nice, feel free to copy style from our website & apps
 * be creative
-
-
-
-
-
-

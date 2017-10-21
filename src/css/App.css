@@ -24,41 +24,37 @@ html{
 	left: 10%;
 }
 .App-header {
-  background: url('bg.jpg');
+  background: url('./bg.jpg');
   background-size: cover;
   background-position: center;
   background-color: #222;
-  height: 100vh;
+  height: 75vh;
   padding: 20px;
   color: white;
 }
 
-.side-pane{
-		background-color:rgba(72,72,72,0.4);
-		padding-left:35px;
-		padding-right:35px;
-		padding-top:35px;
-		padding-bottom:50px;
-		width: 450px;
-		float: left;
-		left: 75%;
-		position: absolute;
-	  margin-top:30px;
-		margin-left: -260px;
-	  -moz-border-radius: 7px;
-	  -webkit-border-radius: 7px;
+.info-section{
+	margin-top: 10px;
+	padding: 10px 10px 10px 10px;
+
 }
 
 .hero-box{
 	margin-top: 400px;
 }
+.hero-desc{
+	font-size: 1.5em;
+}
+
+.my-button{
+	position: absolute;
+	top: 80%;
+	width: inherit;
+}
 
 .hero-text-box{
-	position: absolute;
   font-size: 8em;
   color: #eb3b34;
-	top: 30%;
-	left: 10%;
 }
 
 .App-title {
@@ -71,4 +67,12 @@ html{
   top: 40%;
   left: 10%;
   font-size: 1em;
+}
+
+.down-left{
+	text-align: center;
+}
+
+.down-middle{
+	text-align: center;
 }
