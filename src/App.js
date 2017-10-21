@@ -54,16 +54,7 @@ bookButton() {
           </div>
         </div>
 
-      <div className="row">
-        <div className="col span-1-of-3">
-
-        </div>
-        <div>
-
-        </div>
-      </div>
       <div className="info-section">
-
         <div className="row">
           {(data!=null) && (<div className="col span-1-of-3 down-left">
             <p><span className="icon left icon--pin"> </span> <span> {data.street}, {data.region} <br></br>{data.city}, {data.country} </span></p>
