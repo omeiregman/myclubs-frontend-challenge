@@ -49,6 +49,14 @@ bookButton() {
             <p className="hero-desc">
               High intensity fitness programme incorporating <br></br>elements from several sports and types of excercise
             </p>
+            <br></br>
+            <button className="button" onClick={()=>this.bookButton()}>BOOK NOW</button>
+            <br></br>
+          <p>
+            {(isBooked===true) && (
+              <p>You have been Successfully Booked for this Activity</p>
+            )}
+          </p>
           </div>
         </div>
 
@@ -64,27 +72,6 @@ bookButton() {
             <p>Reservation Email: {data.reservationEmail} </p>
         </div>
       </div>)}
-
-      <div className="row">
-        <div className="col span-7-of-12">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-        </div>
-        <div className="col span-5-of-12">
-          <br></br>
-          <br></br>
-          <br></br>
-          <button className="button" onClick={()=>this.bookButton()}>BOOK NOW</button>
-          <br></br>
-        <p>
-          {(isBooked===true) && (
-            <p>You have been Successfully Booked for this Activity</p>
-          )}
-        </p>
-        </div>
-      </div>
-
     </div>
     </div>
   </div>
