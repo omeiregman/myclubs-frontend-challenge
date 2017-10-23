@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './css/App.css';
 import './css/grid.css';
 import axios from 'axios';
+import Modal from './modal.js';
 
 class App extends Component {
   constructor(props){
@@ -18,7 +19,7 @@ api=()=>{
     (response) => {
       this.setState({
         data:response.data,
-        isBooked:false
+        isModalOpen:false
       });
     });
 }
@@ -27,9 +28,16 @@ componentDidMount(){
   this.api();
 }
 
-bookButton() {
+
+openModal() {
   this.setState({
-    isBooked: true
+    isModalOpen: true
+  })
+}
+
+closeModal() {
+  this.setState({
+    isModalOpen: false
   })
 }
   render() {
@@ -50,7 +58,12 @@ bookButton() {
               High intensity fitness programme incorporating <br></br>elements from several sports and types of excercise
             </p>
             <br></br>
-            <button className="button" onClick={()=>this.bookButton()}>BOOK NOW</button>
+            <button className="button my-button" onClick={()=>this.openModal()}>BOOK NOW</button>
+            <Modal isOpen={this.state.isModalOpen} onClose={() => this.closeModal()}>
+              <h4>Crossfit Booking</h4>
+              <p>You have sucessfully booked for this Activity</p>
+              <p><button className = "button" onClick={() => this.closeModal()}>Close</button></p>
+            </Modal>
             <br></br>
           <p>
             {(isBooked===true) && (
@@ -61,18 +74,19 @@ bookButton() {
         </div>
 
       <div className="info-section">
-        {(data!=null) && (<div className="row">
-          <div className="col span-4-of-12 down-left">
-            <p><span className="icon left icon--pin"> </span> <span> {data.street}, {data.region}, {data.city}, {data.country} </span></p>
-          </div>
-          <div className="col span-4-of-12 down-middle">
-            <p></p>
+        {(data!=null) && (
+          <div className="row">
+            <div className="col span-4-of-12 down-left">
+              <p><span className="icon left icon--pin"> </span> <span> {data.street}, {data.region}, {data.city}, {data.country} </span></p>
+            </div>
+            <div className="col span-4-of-12 down-middle">
+              <p>Reservation Email: {data.reservationEmail}</p>
+            </div>
+            <div className="col span-4-of-12 down-middle">
+              <p>{data.partner.className}: {data.partner.name}</p>
+            </div>
+          </div>)}
         </div>
-          <div className="col span-4-of-12 down-middle">
-            <p>Reservation Email: {data.reservationEmail} </p>
-        </div>
-      </div>)}
-    </div>
     </div>
   </div>
     )
