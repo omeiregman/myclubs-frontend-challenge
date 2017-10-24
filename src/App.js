@@ -26,8 +26,8 @@ api=()=>{
 
 componentDidMount(){
   this.api();
+  this.closeModal();
 }
-
 
 openModal() {
   this.setState({
@@ -60,8 +60,9 @@ closeModal() {
             <br></br>
             <button className="button my-button" onClick={()=>this.openModal()}>BOOK NOW</button>
             <Modal isOpen={this.state.isModalOpen} onClose={() => this.closeModal()}>
-              <h4>Crossfit Booking</h4>
               <p>You have sucessfully booked for this Activity</p>
+              <br></br>
+              <br></br>
               <p><button className = "button" onClick={() => this.closeModal()}>Close</button></p>
             </Modal>
             <br></br>
